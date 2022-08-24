@@ -1,0 +1,79 @@
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 120px;
+}
+
+#search {
+    width: 600px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid #dddddd;
+    padding-left: 15px;
+
+}
+
+::placeholder {
+
+    color: #949494;
+}
+
+.name {
+    color: #949494;
+    padding-left: 5px;
+    font-family: Quicksand, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: black;
+}
+
+#search_icon {
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+#gray_line {
+
+    margin-top: -15px;
+    border: 0.5px solid #dddddd;
+}
+
+#fruits {
+    border: none;
+    padding: 2px 100px 2px 2px;
+}
+
+#cart_div {
+    width: 30%;
+    height: auto;
+}
+
+/* .fruits_dropdown {
+    border: none;
+    padding: 2px 100px 2px 2px;
+}
+
+.fruits_dropdown:hover {
+    background-color: #dddddd;
+
+} */
