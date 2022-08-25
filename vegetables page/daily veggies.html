@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        #vegetable-1st-page{
+            width: 100%;
+            
+            height: auto;
+            display: flex;
+        }
+        #sidebar{
+            width: 20%;
+            height: 1000px;
+            
+        }
+        #veggies-section{
+            width: 80%;
+            height: auto;
+            
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 15px;
+        }
+        #void{
+           
+            width: 88%;
+            height: 280px;
+            border: 0.5px solid #eee;
+            border-radius: 5px;
+
+        }
+        #void:hover{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #veggies-image{
+            height: 55%;
+            width: 100%;
+            
+            background-color: #f9f9f9;
+        }
+        #div-12{
+            width: 70%;
+            height: 90%;
+            
+            margin: auto;
+            /* margin-top: 20%; */
+
+        }
+        #div-12 img{
+            width: 100%;
+            height: 100%;
+        }
+        #div-2{
+            width: 99.5%;
+            height: 33%;
+           
+        }
+        #div-21{
+            height: 60%;
+            width: 99.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+        }
+        #div-21 h3{
+            position: relative;
+            top: 30%;
+            left: 5%;
+            color: #aac0ba;
+            font-weight: lighter;
+        }
+        #div-21 p{
+            position: relative;
+            left: 5%;
+            color: #aac0ba;
+        }
+        #div-22{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #div-22 h3{
+          position: relative;
+          left: 5%;
+          font-weight: lighter;
+        }
+        #div-22 button{
+            position: relative;
+            right: 5%;
+            top: 50%;
+            background-color: white;
+            color: teal;
+            height: 25px;
+            width: 60px;
+            border: 0.5px solid;
+            border-radius: 15px;
+            border-color: teal;
+
+        }
+        #headding{
+            position: relative;
+            left: 20%;
+            width: 80%;
+            font-size: large;
+            font-weight: lighter;
+            
+        }
+
+         /* footer section */
+        
+         #footer{
+            width: 100%;
+            height: 800px;
+            background-color: #165241;
+            
+        }
+        #upper-footer{
+            
+            width: 90%;
+            position: relative;
+            left: 5%;
+            /* width: 100%; */
+            height: 300px;
+            display: flex;
+
+        }
+        #fraazo-logo{
+
+            
+            width: 25%;
+            height: 100%;
+           
+        }
+        #logo-size{
+            width: 70%;
+            height: 30%;
+        }
+        #logo-para{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            color: #aac0ba;
+        }
+        #useful-links{
+            
+            width: 25%;
+            height: 100%;
+        }
+        #list-para{
+            position: relative;
+            left: 15%;
+            
+        }
+        #anchor-text-color{
+            text-decoration: none;
+            font-family: Quicksand,sans-serif!important;
+            color: #aac0ba;
+        }
+        #title-head{
+            position: relative;
+            left: 15%;
+            color: #fffff9;
+            font-family: Quicksand,sans-serif!important;
+        }
+        #title-head2{
+            position: relative;
+            left: 2%;
+            color: #fffff9;
+            font-family: Quicksand,sans-serif!important;
+        }
+        #title-head3{
+            position: relative;
+            left: 2%;
+            color: #fffff9;
+            font-family: 'Quicksand',sans-serif;
+        }
+        #cities-serve{
+            
+            width: 25%;
+            height: 100%;
+        }
+        #contact-us{
+            
+            width: 25%;
+            height: 100%;
+        }
+        .mail-position{
+            position: relative;
+            left: 3%;
+        }
+        #icon-logo{
+            display: flex;
+            
+        }
+        #lower-footer{
+            width: 90%;
+            position: relative;
+            left: 5%;
+            
+            /* width: 100%; */
+            height: 500px;
+        }
+        #fotter-last-head{
+            font-family: 'quicksand',sans-serif;
+            color: #fffff9;
+        }
+        #footer-last-para{
+            font-family: Quicksand,sans-serif!important;
+            color: #aac0ba;
+        }
+        /* #last-para-sizing{
+            
+        } */
+        #footer-last-line{
+            font-family: Quicksand,sans-serif!important;
+            text-align: center;
+            color: #aac0ba;
+            position: relative;
+            top: 5%;
+        }
+        /* footer section */
+        #green-pic{
+            width: 100%;
+            margin-bottom: -10px;
+            
+        }
+        #green-pic img{
+            width: 100%;
+        }
+        /* footer section */
+    </style>
+</head>
+<body>
+   
+    <div id="headding">
+        <div>Home  >  vegetable</div>
+        <div>Daily veggies</div>
+    </div> 
+
+    <div id="vegetable-1st-page">
+        <div id="sidebar"></div>
+        <div id="veggies-section">
+            
+        </div>
+    </div>
+
+
+    <div id="green-pic"><img src="https://webasset.fraazo.com/production/a72cf5cd03bd56f4be37fa1c4ce7062d.svg" alt=""></div>
+
+<!-- footer -->
+
+<footer id="footer">
+    <div id="upper-footer">
+
+     <div id="fraazo-logo">
+        <div id="logo-size"><a href="https://fraazo.com/"><img src="https://webasset.fraazo.com/production/f01ccf2737aa24558c3808178effa5fb.svg" alt=""></a>
+        </div>
+        <div id="logo-para">
+            <p>
+                Order online vegetables & fruits
+                directly from the farm. Fraazo is
+                online platform that allows customer
+                to get farm fresh produce directly
+                from farmers.
+            </p>
+        </div>
+     </div>
+
+     <div id="useful-links">
+        <h2 id="title-head">Useful Links</h2>
+        <div id="list-para">
+        <p><a id="anchor-text-color" href="">Privacy Policy</a></p>
+        <p><a id="anchor-text-color" href="">FAQ</a></p>
+        <p><a id="anchor-text-color" href="">Terms & Conditions</a></p>
+        <p><a id="anchor-text-color" href="">Sitemap</a></p>
+        </div>
+     </div>
+     <div id="cities-serve">
+        <h2 id="title-head">Cities We Serve</h2>
+        <div id="list-para">
+        <p><a id="anchor-text-color" href="">Mumbai</a></p>
+        <p><a id="anchor-text-color" href="">Hyderabad</a></p>
+        <p><a id="anchor-text-color" href="">Bangalore</a></p>
+        <p><a id="anchor-text-color" href="">Delhi</a></p>
+        <p><a id="anchor-text-color" href="">Noida</a></p>
+        <p><a id="anchor-text-color" href="">Gurugram</a></p>
+        <p><a id="anchor-text-color" href="">Pune</a></p>
+    </div>
+     </div>
+     <div id="contact-us">
+      <h2 id="title-head3">Connect with us</h2>
+      <div id="icon-logo"><i class="material-icons">email</i><a class="mail-position" id="anchor-text-color" href="">support@fraazo.com</a>
+      </div>
+       <div id="icon-logo"><i class="material-icons">call</i><a class="mail-position" id="anchor-text-color" href="">+91 9152291522</a>
+       </div>
+      <div>
+        <h2 id="title-head2">Download The App</h2>
+        <div><a id="anchor-text-color" href=""><img src="https://webasset.fraazo.com/production/googleplaystore.863bf06a3d2d326a5b94.png" alt=""></a>
+        <a id="anchor-text-color" href=""><img src="https://webasset.fraazo.com/production/appstore.a8155c5772ea7d80d435.png" alt=""></a></div>
+      </div>
+     </div>
+    </div>
+    <div id="lower-footer">
+    <h1 id="fotter-last-head">Fresh Fruits & Vegetables Grocery Shopping Online</h1>
+    <div id="last-para-sizing">
+        <p id="footer-last-para">
+            The quality of fruits & vegetables is synonymous with its freshness, while getting fresh fruits and vegetables is a tedious task at times but with Fraazo you can get it delivered at your doorstep. Fraazo brings a wide range of farm fresh fruits, vegetables and dairy products to you, all in just a click. We currently serve about more than 3lacs+ happy customers in Mumbai, Navi Mumbai, Thane, Kalyan-Dombivli and Virar. Fraazo has made online shopping of fresh produce much easier with its hassle-free home delivery options. You can choose the delivery slot as per your choice and schedule your order accordingly. Or you can simply opt for the option of 90 mins Express Delivery and get your order delivered in not more than 90 mins. The farm fresh fruits and vegetables on Fraazo are available at best prices compared to other vendors & supermarkets. Plus with so many exciting offers, one can save up to 20% on their Monthly grocery budgets. No need to wait in long queues in crowded supermarkets or local mandis for getting the best prices on veggies. Kick the stress out & just Fraazo your dose of freshness with savings at the comfort of your home. Fraazo directly sources fresh fruits and veggies from an extensive network of farmers across Maharashtra, hence bringing you fresh produce straight from farm to table in less than 18 hours. With our Safe & Hygienic packaging and minimal multiple handling, we ensure you get the best quality fresh produce.
+        </p>
+
+        <p id="footer-last-para">The fruits and vegetables are 100% hand-picked fresh from farm, while some products are hydroponically-grown. The wide range of fruits and veggies on Fraazo include more than 100+ farm fresh vegetables and fruits, starting from regular veggies like dudhi, cauliflower, beetroot, cabbage, etc. to exotic veggies like broccoli, lettuce etc. We also provide the essential vegetable combos like Onion, Potato, Tomato Combo, Salad Combo, Fresh Cut-Veg Combos or Fruit Combos like Banana, Apple Combo, & more. There are a lot of exciting deals on vegetables & fruits, every day of the week, the major highlights being Monday Mandi, Veggie Wednesday, Freelivery Thursday & Fruit Friday.For payments, you can choose from the multiple payment options as Fraazo accepts Debit card, Credit card, UPI options like iMobile, Google Pay, 8+ e-Wallet options like Phonepe, JioPay, MobiKwik, Sodexo, NetBanking and Cash on Delivery (COD). If you ever have an issue with missing items or any quality issue, you can raise your concern with us in 48 hrs & we shall refund/ replace your product with “no-questions-asked-policy”. You can simply connect with our Customer Support team via Chat Support or Call on 9152291522.</p>
+
+
+    </div>
+    <p id="footer-last-line">© Copyrights 2021 - 2022. Fraazo. All Rights Reserved.</p>
+
+    </div>
+
+</footer>
+
+<!-- footer section -->
+    
+</body>
+</html>
+<script>
+    let data=[]
+   
+    let daily = [
+    {
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/006/605/original/data?width=256&height=256",
+        name:"Tomato",
+        price:"28",
+        size:"1kg"
+    },
+    {
+        image:"https://imagemaster.fraazo.com/fraazo-master/products/VCAB12.png?width=256&height=256",
+        name:"Cabbage",
+        price:"31",
+        size:"1pc"
+    }, 
+       {
+        image:"https://imagemaster.fraazo.com/fraazo-master/products/VCAP12.png?width=256&height=256",
+        name:"Green Capsicum",
+        price:"250g",
+        size:"16"
+    }, 
+       {
+        image:"https://imagemaster.fraazo.com/fraazo-master/products/ESWE13.png?width=256&height=256",
+        name:"Sweet Corn",
+        price:"17",
+        size:"1pc"
+    },  
+      {
+        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/028/original/data?width=256&height=256",
+        name:"Brinjal(Baigan)",
+        price:"21",
+        size:"250g"
+    },
+        {
+        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/234/original/data?width=256&height=256",
+        name:"Onion",
+        price:"30",
+        size:"250g"
+    },  
+      {
+        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/012/original/data?width=256&height=256",
+        name:"Potato",
+        price:"27",
+        size:"500g"
+    },  
+      {
+        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/101/original/data?width=256&height=256",
+        name:"Pumpkin",
+        price:"32",
+        size:"500g"
+    },  
+      {
+        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/106/original/data?width=256&height=256",
+        name:"Snake Gourd",
+        price:"19",
+        size:"250g"
+    }, 
+       {
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/246/original/data?width=256&height=256",
+        name:"Banana Flower",
+        price:"54",
+        size:"1pc"
+    },  
+      {
+        image:"https://imagemaster.fraazo.com/fraazo-master/products/VPEA11.png?width=256&height=256",
+        name:"Green Peas",
+        price:"99",
+        size:"500g"
+    },  
+      {
+        image:"https://imagemaster.fraazo.com/fraazo-master/products/VBEE12.png?width=256&height=256",
+        name:"Beetroot",
+        price:"30",
+        size:"500g"
+    },
+
+
+]
+
+function append(data){
+    let cont=document.getElementById("veggies-section")
+    cont.innerHTML=null;
+    data.forEach((el)=>{
+        let image=document.createElement("img")
+        image.src=el.image;
+        let name=document.createElement("h3")
+        name.innerText=el.name;
+        let price=document.createElement("h3")
+        price.innerText= "₹" +" "+ el.price;
+        let quan=document.createElement("p")
+        quan.innerText=el.size
+
+        let btn=document.createElement("button")
+        btn.innerText="ADD"
+        btn.setAttribute("id","btn")
+        
+        let box1=document.createElement("div")
+         box1.setAttribute("id","veggies-image")
+
+        let box12=document.createElement("div")
+        box12.setAttribute("id","div-12")
+        let box2=document.createElement("div")
+        box2.setAttribute("id","div-2")
+        box12.append(image)
+        box1.append(box12)
+        let box21=document.createElement("div")
+        box21.setAttribute("id","div-21")
+        box21.append(name,quan)
+
+        let box22=document.createElement("div")
+        box22.setAttribute("id","div-22")
+        box22.append(price,btn)
+        box2.append(box21,box22)
+
+        let box=document.createElement("div")
+        box.setAttribute("id","void")
+        box.append(box1,box2)
+        cont.append(box)
+    })
+}
+append(daily);
+
+</script>
