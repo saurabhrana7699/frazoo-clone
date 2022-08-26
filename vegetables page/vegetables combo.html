@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-        /* navbar section */
-body{
+
+      /* navbar section */
+ body{
     overflow-x: hidden;
 }
         #navbar {
@@ -207,7 +209,7 @@ h4{
         }
         #veggies-section{
             width: 80%;
-            height: auto;
+            height: 650px;
             
             display: grid;
             grid-template-columns: repeat(4,1fr);
@@ -426,61 +428,64 @@ h4{
     </style>
 </head>
 <body>
-     <!-- navbar section -->
+  
+         <!-- navbar section -->
 
-     <div id="navbar">
-        <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
-        <div class="flex">
-            <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
-            <p class="name">Powai</p>
+         <div id="navbar">
+            <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
+            <div class="flex">
+                <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
+                <p class="name">Powai</p>
+    
+            </div>
+            <div class="flex">
+                <input id="search" type="text" placeholder="Find fresh vegetables, fruits and dairy....">
+                <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
+            </div>
+            <div class="flex">
+                <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
+                <p class="name">Cart</p>
+            </div>
+            <div class="flex">
+                <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
+                <p class="name">Credit</p>
+            </div>
+            <div class="flex">
+                <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
+                <p class="name">Login</p>
+            </div>
+        </div>
+        <hr id="gray_line">
+        <div id="container1">
+            <div id="navbar1">
+    
+    
+                <ul>
+                    <li><a href="">Fruits</a>
+                        <ul>
+                            <li><a href="">Exotic Fruits</a></li>
+                            <li><a href="">Fresh Fruits</a></li>
+                            <li><a href="">Fruit Combos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Vegetables</a>
+                        <ul>
+                            <li><a href="">Daily veggies</a></li>
+                            <li><a href="">Herb & Leafies</a></li>
+                            <li><a href="">Exotic Vegitables</a></li>
+                            <li><a href="">Cuts, peeled & Sprouts</a></li>
+                            <li><a href="">Vegetable Combos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr id="last">
+    
+         <!-- navbar section -->
+        
+    
 
-        </div>
-        <div class="flex">
-            <input id="search" type="text" placeholder="Find fresh vegetables, fruits and dairy....">
-            <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
-        </div>
-        <div class="flex">
-            <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
-            <p class="name">Cart</p>
-        </div>
-        <div class="flex">
-            <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
-            <p class="name">Credit</p>
-        </div>
-        <div class="flex">
-            <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
-            <p class="name">Login</p>
-        </div>
-    </div>
-    <hr id="gray_line">
-    <div id="container1">
-        <div id="navbar1">
-
-
-            <ul>
-                <li><a href="">Fruits</a>
-                    <ul>
-                        <li><a href="">Exotic Fruits</a></li>
-                        <li><a href="">Fresh Fruits</a></li>
-                        <li><a href="">Fruit Combos</a></li>
-                    </ul>
-                </li>
-                <li><a href="">Vegetables</a>
-                    <ul>
-                        <li><a href="">Daily veggies</a></li>
-                        <li><a href="">Herb & Leafies</a></li>
-                        <li><a href="">Exotic Vegitables</a></li>
-                        <li><a href="">Cuts, peeled & Sprouts</a></li>
-                        <li><a href="">Vegetable Combos</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <hr id="last">
-
-     <!-- navbar section -->
-   
     <div id="headding">
         <!-- <div>Home  >  vegetable</div>
         <div>Daily veggies</div> -->
@@ -488,27 +493,26 @@ h4{
 
     <div id="vegetable-1st-page">
         <div id="sidebar">
-   
-             <!-- sidebar section -->
+            <!-- sidebar section -->
      
         <div id="fal">
         
         
-            <h1 id="fruits">+ Fruits</h1>
-            </div>
-            
-            <div id="sabji">
-            
-               <h1 id="vege">+ Vegetables</h1>
-            </div>
-    
-                <!-- sidebar section -->
+        <h1 id="fruits">+ Fruits</h1>
+        </div>
+        
+        <div id="sabji">
+        
+           <h1 id="vege">+ Vegetables</h1>
+        </div>
 
+            <!-- sidebar section -->
         </div>
         <div id="veggies-section">
             
         </div>
     </div>
+    
 
 
     <div id="green-pic"><img src="https://webasset.fraazo.com/production/a72cf5cd03bd56f4be37fa1c4ce7062d.svg" alt=""></div>
@@ -570,10 +574,10 @@ h4{
     <h1 id="fotter-last-head">Fresh Fruits & Vegetables Grocery Shopping Online</h1>
     <div id="last-para-sizing">
         <p id="footer-last-para">
-            The quality of fruits & vegetables is synonymous with its freshness, while getting fresh fruits and vegetables is a tedious task at times but with Fraazo you can get it delivered at your doorstep. Fraazo brings a wide range of farm fresh fruits, vegetables and dairy products to you, all in just a click. We currently serve about more than 3lacs+ happy customers in Mumbai, Navi Mumbai, Thane, Kalyan-Dombivli and Virar. Fraazo has made online shopping of fresh produce much easier with its hassle-free home delivery options.The farm fresh fruits and vegetables on Fraazo are available at best prices compared to other vendors & supermarkets. Plus with so many exciting offers, one can save up to 20% on their Monthly grocery budgets. No need to wait in long queues in crowded supermarkets or local mandis for getting the best prices on veggies. Kick the stress out & just Fraazo your dose of freshness with savings at the comfort of your home. Fraazo directly sources fresh fruits and veggies from an extensive network of farmers across Maharashtra, hence bringing you fresh produce straight from farm to table in less than 18 hours. With our Safe & Hygienic packaging and minimal multiple handling, we ensure you get the best quality fresh produce.
+            The quality of fruits & vegetables is synonymous with its freshness, while getting fresh fruits and vegetables is a tedious task at times but with Fraazo you can get it delivered at your doorstep. Fraazo brings a wide range of farm fresh fruits, vegetables and dairy products to you, all in just a click. We currently serve about more than 3lacs+ happy customers in Mumbai, Navi Mumbai, Thane, Kalyan-Dombivli and Virar. Fraazo has made online shopping of fresh produce much easier with its hassle-free home delivery options. You can choose the delivery slot as per your choice and schedule your order accordingly. Or you can simply opt for the option of 90 mins Express Delivery and get your order delivered in not more than 90 mins. The farm fresh fruits and vegetables on Fraazo are available at best prices compared to other vendors & supermarkets. Plus with so many exciting offers, one can save up to 20% on their Monthly grocery budgets. No need to wait in long queues in crowded supermarkets or local mandis for getting the best prices on veggies. Kick the stress out & just Fraazo your dose of freshness with savings at the comfort of your home. Fraazo directly sources fresh fruits and veggies from an extensive network of farmers across Maharashtra, hence bringing you fresh produce straight from farm to table in less than 18 hours. With our Safe & Hygienic packaging and minimal multiple handling, we ensure you get the best quality fresh produce.
         </p>
 
-        <p id="footer-last-para">The fruits and vegetables are 100% hand-picked fresh from farm, while some products are hydroponically-grown. The wide range of fruits and veggies on Fraazo include more than 100+ farm fresh vegetables and fruits, starting from regular veggies like dudhi, cauliflower, beetroot, cabbage, etc. to exotic veggies like broccoli, lettuce etc.There are a lot of exciting deals on vegetables & fruits, every day of the week, the major highlights being Monday Mandi, Veggie Wednesday, Freelivery Thursday & Fruit Friday.For payments, you can choose from the multiple payment options as Fraazo accepts Debit card, Credit card, UPI options like iMobile, Google Pay, 8+ e-Wallet options like Phonepe, JioPay, MobiKwik, Sodexo, NetBanking and Cash on Delivery (COD). If you ever have an issue with missing items or any quality issue, you can raise your concern with us in 48 hrs & we shall refund/ replace your product with “no-questions-asked-policy”. You can simply connect with our Customer Support team via Chat Support or Call on 9152291522.</p>
+        <p id="footer-last-para">The fruits and vegetables are 100% hand-picked fresh from farm, while some products are hydroponically-grown. The wide range of fruits and veggies on Fraazo include more than 100+ farm fresh vegetables and fruits, starting from regular veggies like dudhi, cauliflower, beetroot, cabbage, etc. to exotic veggies like broccoli, lettuce etc. We also provide the essential vegetable combos like Onion, Potato, Tomato Combo, Salad Combo, Fresh Cut-Veg Combos or Fruit Combos like Banana, Apple Combo, & more. There are a lot of exciting deals on vegetables & fruits, every day of the week, the major highlights being Monday Mandi, Veggie Wednesday, Freelivery Thursday & Fruit Friday.For payments, you can choose from the multiple payment options as Fraazo accepts Debit card, Credit card, UPI options like iMobile, Google Pay, 8+ e-Wallet options like Phonepe, JioPay, MobiKwik, Sodexo, NetBanking and Cash on Delivery (COD). If you ever have an issue with missing items or any quality issue, you can raise your concern with us in 48 hrs & we shall refund/ replace your product with “no-questions-asked-policy”. You can simply connect with our Customer Support team via Chat Support or Call on 9152291522.</p>
 
 
     </div>
@@ -588,94 +592,57 @@ h4{
 </body>
 </html>
 <script>
-    
-//   navar section
-
-document.querySelector("#cart").addEventListener("click", cartpage)
-
-function cartpage() {
-    let div = document.createElement("div");
-    div.setAttribute("id", "cart_div")
-}
-
-// navbar section
-
     let data=[]
    
-    let daily = [
+    let combos = [
     {
-        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/006/605/original/data?width=256&height=256",
-        name:"Tomato",
-        price:"28",
-        size:"1kg"
+        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/389/original/data?width=512&height=512",
+        name:"Fresh Salad Combo ",
+        price:"67",
+        size:"1 Combo"
     },
     {
-        image:"https://imagemaster.fraazo.com/fraazo-master/products/VCAB12.png?width=256&height=256",
-        name:"Cabbage",
-        price:"31",
-        size:"1pc"
-    }, 
-       {
-        image:"https://imagemaster.fraazo.com/fraazo-master/products/VCAP12.png?width=256&height=256",
-        name:"Green Capsicum",
-        price:"16",
-        size:"250g"
-    }, 
-       {
-        image:"https://imagemaster.fraazo.com/fraazo-master/products/ESWE13.png?width=256&height=256",
-        name:"Sweet Corn",
-        price:"17",
-        size:"1pc"
-    },  
-      {
-        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/028/original/data?width=256&height=256",
-        name:"Brinjal(Baigan)",
-        price:"21",
-        size:"250g"
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/008/980/original/data?width=256&height=256",
+        name:"Masala Combo",
+        price:"45",
+        size:"1 Combo"
     },
-        {
-        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/234/original/data?width=256&height=256",
-        name:"Onion",
-        price:"30",
-        size:"250g"
-    },  
-      {
-        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/012/original/data?width=256&height=256",
-        name:"Potato",
-        price:"27",
-        size:"500g"
-    },  
-      {
-        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/101/original/data?width=256&height=256",
-        name:"Pumpkin",
-        price:"32",
-        size:"500g"
-    },  
-      {
-        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/106/original/data?width=256&height=256",
-        name:"Snake Gourd",
-        price:"19",
-        size:"250g"
-    }, 
-       {
-        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/246/original/data?width=256&height=256",
-        name:"Banana Flower",
-        price:"54",
-        size:"1pc"
-    },  
-      {
-        image:"https://imagemaster.fraazo.com/fraazo-master/products/VPEA11.png?width=256&height=256",
-        name:"Green Peas",
+    {
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/177/original/data?width=512&height=512",
+        name:"Detox Mix Combo ",
+        price:"74",
+        size:"1 Combo"
+    },
+    {
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/401/original/data?width=512&height=512",
+        name:"Yellow Capsicum (Bell Pepper) 2pcs",
+        price:"108",
+        size:"1 Combo"
+    },
+    {
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/400/original/data?width=512&height=512",
+        name:"Red Capsicum 2pcs",
         price:"99",
-        size:"500g"
-    },  
-      {
-        image:"https://imagemaster.fraazo.com/fraazo-master/products/VBEE12.png?width=256&height=256",
-        name:"Beetroot",
-        price:"30",
-        size:"500g"
+        size:"1 Combo"
     },
-
+    {
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/402/original/data?width=512&height=512",
+        name:"Mixed Capsicum Combo ",
+        price:"108",
+        size:"1 Combo"
+    },
+    {
+        image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/202/original/data?width=512&height=512",
+        name:"UPVAS Combo ",
+        price:"121",
+        size:"1 Combo"
+    },
+    {
+        image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/175/original/data?width=512&height=512",
+        name:"Regular Veggie Combo",
+        price:"123",
+        size:"1 Combo"
+    },
 
 ]
 
@@ -695,6 +662,7 @@ function append(data){
         let btn=document.createElement("button")
         btn.innerText="ADD"
         btn.setAttribute("id","btn")
+
         // btn.addEventListener("click",function(){
         //     addfunc(el)
         // })
@@ -723,7 +691,7 @@ function append(data){
         cont.append(box)
     })
 }
-append(daily);
+append(combos);
 // let arr=[]
 
 // function addfunc(el){
@@ -746,7 +714,7 @@ if(count===1){
    let fal = document.querySelector("#fruits")
    fal.innerText = "- Fruits"
   
-    
+
    
     let div = document.createElement("div")
       
@@ -763,7 +731,7 @@ if(count===1){
     document.querySelector("#fal").append(div)
 }
     }
- 
+    
     let y = document.querySelector("#vege")
 y.addEventListener("click",vege)
 let sum=0
@@ -801,5 +769,6 @@ function vege(){
  
 
 }
+
 
 </script>
