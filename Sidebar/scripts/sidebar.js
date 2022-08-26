@@ -18,21 +18,39 @@ if(count===1){
 
     let name = document.createElement("h4")
     name.innerText = "--Exotic Fruits"
+    name.addEventListener("click",function(){
+
+        exos()
+    })
 
     let name2 = document.createElement("h4")
     name2.innerText = " --Fresh Fruits"
+name2.addEventListener("click",function(){
+    exos2()
+})
+
     let name3 = document.createElement("h4")
     name3.innerText = "--Fruit Combos"
-
+    name3.addEventListener("click",function(){
+        exos3()
+    })
     div.append(name,name2,name3)
     document.querySelector("#fal").append(div)
 
 
 }
-
-
-      
+   
     }
+    function exos(){
+       window.location.href = "exotic.html"
+    }
+function exos2(){
+    window.location.href = "fresh.html"
+}
+function exos3(){
+    window.location.href = "fruitcombos.html"
+}
+
 
 
 
