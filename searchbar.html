@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <input type="text" placeholder="search" id="query" oninput="debounce(main,1000)">
+        <div id="box"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    async function main(query) {
+        let quer = document.querySelector("#query").value;
+
+        let res = await fetch(`https://glacial-taiga-15647.herokuapp.com/api/data/?search=${quer}`
+        );
+        let data = await res.json();
+        let filterdata = filterData(quer, data);
+        append(data)
+        console.log(data)
+
+    }
+
+    function filterData(quer, data) {
+        let newArray = [];
+        // const hasWord = (str, word) => str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(/\s+/).includes(word);
+        data.forEach(function (el) {
+            if (el.name.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").split(/\s+/).includes(quer)) {
+                newArray.push(el);
+            }
+        })
+        console.log(newArray);
+    }
+
+
+
+    function append(data) {
+        let box = document.querySelector("#box");
+        box.innerHTML = "";
+        data.forEach(function (el) {
+
+            let p = document.createElement("p");
+            p.innerText = el.name;
+
+            box.append(p);
+        })
+    };
+
+    let id;
+    function debounce(func, delay) {
+        if (id) {
+            clearTimeout(id)
+        }
+        id = setTimeout(function () {
+            func();
+        }, 1000)
+    }
+</script>

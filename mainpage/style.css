@@ -1,17 +1,4 @@
 *{
- 
-    margin: 0;
-    font-family: Quicksand,sans-serif;
-}
-#thor:hover{
-    background-color: teal;
-    color: white;
-}
-#container{
-    padding: 20px;
-    display: flex;
-  
-}
 
 .sliders img{
     padding: 15px;
@@ -66,7 +53,7 @@
 #Best-products img {     
     /* have to keep hover for image */
     cursor: pointer;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
     width: 200px;
 }
 #Best-products>div>button{
@@ -80,13 +67,7 @@
 }
 
 #select-products{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  width: 50%;
-  margin: auto;
-  gap: 40px;
-   
-   
+
 }
 #select-products img{
     margin: auto;
@@ -100,12 +81,7 @@
     /* border: 1px solid red; */
     margin-right: 50px;
 }
-#select-products>div{
 
-    justify-content: space-between;
-    align-items: center;
-    
-    width: 100%;
     /* border: 1px solid black; */
 }
 
@@ -123,9 +99,7 @@
     margin: auto;
     text-align: center;
 }
-/* #fruits-container img{
-    background-color: #f9f9f9;
-} */
+
 #fruits-container>div:hover{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -304,12 +278,7 @@
     margin: auto;
     padding: 5px;
 }
-.div_cart:hover{
-    background-color:teal;
-    color: white;
-}
-#btn:hover{
-    color: white;
+
 }
 #btn{
     background: transparent;
