@@ -1,0 +1,65 @@
+#sabkidetails{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid green; */
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+h1,h3{
+    font-family: sans-serif;
+}
+#typeinput{
+    font-size: 25px;
+    border: 0px solid ;
+    border-bottom: 1px solid grey;
+width: 45%;
+}
+#typeinput2{
+    font-size: 25px;
+    border: 0px solid ;
+    border-bottom: 1px solid grey;
+    margin-top: 40px;
+width: 45%;
+}
+#typeinput3{
+    font-size: 25px;
+    border: 0px solid ;
+    border-bottom: 1px solid grey;
+    margin-top: 40px;
+width: 47%;
+margin-right: 335px;
+margin-top: 40px;
+}
+#typeinput4{
+    font-size: 25px;
+    border: 0px solid ;
+    border-bottom: 1px solid grey;
+width: 47%;
+margin-right: 335px;
+margin-top: 40px;
+}
+#checkboxes{
+    margin-top: 30px;
+    width: 98%;
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+span{
+    margin-top: 15px;
+}
+#pressbtn{
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    border-radius: 70px;
+    font-size: 35px;
+    color: teal;
+    border: 3px solid teal;
+}
+#pressbtn:hover{
+    background-color: teal;
+    color: white;
+}

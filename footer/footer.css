@@ -1,0 +1,119 @@
+#footer{
+    width: 100%;
+    height: 800px;
+    background-color: #165241;
+    
+}
+#upper-footer{
+    
+    width: 90%;
+    position: relative;
+    left: 5%;
+    /* width: 100%; */
+    height: 300px;
+    display: flex;
+
+}
+#fraazo-logo{
+
+    
+    width: 25%;
+    height: 100%;
+   
+}
+#logo-size{
+    width: 70%;
+    height: 30%;
+}
+#logo-para{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #aac0ba;
+}
+#useful-links{
+    
+    width: 25%;
+    height: 100%;
+}
+#list-para{
+    position: relative;
+    left: 15%;
+    
+}
+#anchor-text-color{
+    text-decoration: none;
+    font-family: Quicksand,sans-serif!important;
+    color: #aac0ba;
+}
+#title-head{
+    position: relative;
+    left: 15%;
+    color: #fffff9;
+    font-family: Quicksand,sans-serif!important;
+}
+#title-head2{
+    position: relative;
+    left: 2%;
+    color: #fffff9;
+    font-family: Quicksand,sans-serif!important;
+}
+#title-head3{
+    position: relative;
+    left: 2%;
+    color: #fffff9;
+    font-family: Quicksand,sans-serif!important;
+}
+#cities-serve{
+    
+    width: 25%;
+    height: 100%;
+}
+#contact-us{
+    
+    width: 25%;
+    height: 100%;
+}
+.mail-position{
+    position: relative;
+    left: 3%;
+}
+#icon-logo{
+    display: flex;
+    
+}
+#lower-footer{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    
+    /* width: 100%; */
+    height: 500px;
+}
+#fotter-last-head{
+    font-family: 'quicksand',sans-serif;
+    color: #fffff9;
+}
+#footer-last-para{
+    font-family: Quicksand,sans-serif!important;
+    color: #aac0ba;
+}
+/* #last-para-sizing{
+    
+} */
+#footer-last-line{
+    font-family: Quicksand,sans-serif!important;
+    text-align: center;
+    color: #aac0ba;
+    position: relative;
+    top: 5%;
+}
+/* footer section */
+#green-pic{
+    width: 100%;
+    margin-bottom: -10px;
+    
+}
+#green-pic img{
+    width: 100%;
+}

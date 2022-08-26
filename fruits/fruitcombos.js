@@ -3,48 +3,48 @@ let data = [
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/445/original/data?width=256&height=256",
         name:"Coconut Combo(2 pcs Coconuts)",
-        price:"48",
+        price:48,
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/204/original/data?width=256&height=256",
         name:"Cooler Fruit(1pc Waremelon + 1pc Papaya)",
-        price:"96",
+        price:96,
         size:"1 Combo"
     
     },
     {
         image:"https://imagemaster.fraazo.com/fraazo-master/products/FC004.png?width=256&height=256",
         name:"Fruit Juice Combo",
-        price:"142",
+        price:142,
         size:"1 Combo"
     
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/244/original/data?width=256&height=256",
         name:"Tasty Combo(4pc Royal Gala + 1kg Robusta Banana)",
-        price:"173",
+        price:173,
         size:"1 Combo"
     
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/447/original/data?width=256&height=256",
         name:"Shubh Combo (Red Delicious Apple Robusta Banana)",
-        price:"199",
+        price:199,
         size:"1 Combo"
     
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/446/original/data?width=256&height=256",
         name:"Prasad Combo (Royal Gala Apple, Green Pear, Robusta Banana)",
-        price:"296",
+        price:296,
         size:"1 Combo"
     
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/442/original/data?width=256&height=256",
         name:"Smoothie Combo (1 kg Robusta Banana + 1 pkt Blueberry)",
-        price:"240",
+        price:240,
         size:"1 Combo"
     
     },
@@ -56,9 +56,13 @@ data.forEach(function(elem){
 
     let div = document.createElement("div")
    
+   
 
     let img = document.createElement("img")
     img.src = elem.image
+    img.addEventListener("click",function(){
+        addtocart(elem)
+    })
 
     let name = document.createElement("p")
     name.innerText = elem.name
@@ -72,8 +76,24 @@ data.forEach(function(elem){
     let btn = document.createElement("button")
     btn.innerText = "ADD"
     btn.setAttribute("id","btn")
+    btn.addEventListener("click",function(){
+        buy(elem)
+     })
 
     div.append(img,name,price,size,btn)
     document.querySelector("#main3").append(div)
 })
+}
+
+let arr = []
+function addtocart(elem){
+    arr.push(elem)
+    localStorage.setItem("details",JSON.stringify(arr))
+    window.location.href="details.html"
+}
+
+let deta = JSON.parse(localStorage.getItem("cartdata")) || []
+function buy(elem){
+   deta.push(elem)
+   localStorage.setItem("cartdata",JSON.stringify(deta))
 }
