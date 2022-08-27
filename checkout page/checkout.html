@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <style>
         body{
@@ -12,10 +13,7 @@
 
         }
         iframe{
-            border: 1px solid transparent;
-            width: 120%;
-            margin: auto;
-            border-radius: 20px;
+
         }
         #address{
             margin: auto;
@@ -28,8 +26,7 @@
             color: teal;
             width: 200%;
             height: 40px;
-            margin-left: 110%;
-            margin-top: 20px;
+
             border-radius: 20px;
             font-size: 25px;
         }
@@ -40,6 +37,7 @@
         #map-container{
             display: flex;
             padding: 20px;
+<
         }
         #add-address{
             padding: 10px;
@@ -61,10 +59,12 @@
     </style>
 </head>
 <body onload="geoLocation()">
+
 <div id="map-container">
     <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps embed wordpress</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
     
     <div id="address">
+
        
        <form action="" id="details-form">
         <div id="add-address">
@@ -76,12 +76,7 @@
         <input type="text" placeholder="Enter City" id="city">
         <input type="text" placeholder="State" id="state">
         <input type="Number" placeholder="Enter PIN Code" id="pin">
-      
-            <button id="submit" onclick="CheckoutDetails()" >Submit</button>
-        
-       </form>
-    </div>
-</div>
+
 </body>
 </html>
 <script>
@@ -135,7 +130,7 @@ function ShowDetails(name,house,mobile,city,state,pin){
 }
 
 function CheckoutDetails(){
-    // console.log("Hello World")
+<
 
     let form = document.getElementById("details-form");
 
@@ -155,6 +150,7 @@ function CheckoutDetails(){
     console.log('details:', details)
     let username = document.querySelector("#name").value
     alert("Dear"+ "  " +   `${username}`+   "  " +  "Your Order Is Confirmed")
+
 
 }
 </script>

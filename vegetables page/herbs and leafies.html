@@ -435,27 +435,21 @@ h4{
      <!-- navbar section -->
 
      <div id="navbar">
-        <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
+main
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
             <p class="name">Powai</p>
 
         </div>
         <div class="flex">
-            <input id="search" type="text" placeholder="Find fresh vegetables, fruits and dairy....">
-            <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
-        </div>
-        <div class="flex">
-            <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
-            <p class="name">Cart</p>
+< main
         </div>
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
             <p class="name">Credit</p>
         </div>
         <div class="flex">
-            <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
-            <p class="name">Login</p>
+<<> main
         </div>
     </div>
     <hr id="gray_line">
@@ -466,18 +460,12 @@ h4{
             <ul>
                 <li><a href="">Fruits</a>
                     <ul>
-                        <li><a href="">Exotic Fruits</a></li>
-                        <li><a href="">Fresh Fruits</a></li>
-                        <li><a href="">Fruit Combos</a></li>
+main
                     </ul>
                 </li>
                 <li><a href="">Vegetables</a>
                     <ul>
-                        <li><a href="">Daily veggies</a></li>
-                        <li><a href="">Herb & Leafies</a></li>
-                        <li><a href="">Exotic Vegitables</a></li>
-                        <li><a href="">Cuts, peeled & Sprouts</a></li>
-                        <li><a href="">Vegetable Combos</a></li>
+main
                     </ul>
                 </li>
             </ul>
@@ -485,6 +473,7 @@ h4{
     </div>
     <hr id="last">
 
+<<>> main
      <!-- navbar section -->
 
     <div id="headding">
@@ -592,6 +581,7 @@ h4{
     
 </body>
 </html>
+<main
 <script>
     let data=[]
    
@@ -600,73 +590,73 @@ h4{
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LCUR11.png?width=256&height=256",
     name:"Curry Leaves",
-    price:"5",
+in
     size:"50g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/003/250/original/data?width=256&height=256",
     name:"Lemon(Nimboo)",
-    price:"16",
+
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LCOR21.png?width=256&height=256",
     name:"Coriander Leaves",
-    price:"15",
+
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/VGAR12.png?width=256&height=256",
     name:"Garlic",
-    price:"9",
+<
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LMIN11.png?width=256&height=256",
     name:"Mint Leaves(Pudina)",
-    price:"27",
+
     size:"100g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/417/original/data?width=256&height=256",
     name:"Aloevera",
-    price:"39",
+
     size:"1pc"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/VAWL11.png?width=256&height=256",
     name:"Amla",
-    price:"28",
+
     size:"250g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/003/639/original/data?width=256&height=256",
     name:"Green Amaranthus",
-    price:"45",
+<
     size:"250g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/162/original/data?width=256&height=256",
     name:"Red Amaranthus",
-    price:"45",
+
     size:"250g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/506/original/data?width=256&height=256",
     name:"Betel Leaf",
-    price:"26",
+n
     size:"6pcs"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LMET1.png?width=256&height=256",
     name:"Methi (Fenugreek Leaves)",
-    price:"18",
+<n
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LSPI11.png?width=512&height=512",
     name:"Spinach (Palak)",
-    price:"17",
+
     size:"250g"
 },
 ]
@@ -677,6 +667,7 @@ function append(data){
     data.forEach((el)=>{
         let image=document.createElement("img")
         image.src=el.image;
+
         let name=document.createElement("h3")
         name.innerText=el.name;
         let price=document.createElement("h3")
@@ -686,11 +677,7 @@ function append(data){
 
         let btn=document.createElement("button")
         btn.innerText="ADD"
-        btn.setAttribute("id","btn")
 
-        btn.addEventListener("click",function(){
-            addfunc(el)
-        })
         
         let box1=document.createElement("div")
          box1.setAttribute("id","veggies-image")
@@ -717,82 +704,6 @@ function append(data){
     })
 }
 append(herbs);
-let arr=[]
-
-function addfunc(el){
-    arr.push(el)
-    localStorage.setItem("",JSON.stringify(arr))
-}
-
-
-// sidebar section
-
-let x =  document.querySelector("#fruits")
-   x.addEventListener("click",fruits)
-   let count =0
-  
-    function fruits(){
-   
-count++
-if(count===1){
-
-   let fal = document.querySelector("#fruits")
-   fal.innerText = "- Fruits"
-  
-
-   
-    let div = document.createElement("div")
-      
-
-    let name = document.createElement("h4")
-    name.innerText = "--Exotic Fruits"
-
-    let name2 = document.createElement("h4")
-    name2.innerText = " --Fresh Fruits"
-    let name3 = document.createElement("h4")
-    name3.innerText = "--Fruit Combos"
-
-    div.append(name,name2,name3)
-    document.querySelector("#fal").append(div)
-}
-    }
-
-    
-    let y = document.querySelector("#vege")
-y.addEventListener("click",vege)
-let sum=0
-function vege(){
-   sum++
-   if(sum===1){
-
-    document.querySelector("#vege").innerText = "- Vegetables"
-  
-    let div = document.createElement("div")
- 
-    let name = document.createElement("h4")
-    name.innerText = "--Daily Veggies"
-
-    let name2 = document.createElement("h4")
-    name2.innerText = "--Herbs & Leafies"
-
-    let name3 = document.createElement("h4")
-    name3.innerText = "--Exotic Vegetables"
-
-    let name4 = document.createElement("h4")
-    name4.innerText = "--Cuts,Peeled & Sprouts"
-
-    let name5 = document.createElement("h4")
-    name5.innerText = "--Vegetavles Combos"
-
-    div.append(name,name2,name3,name4,name5)
-    document.querySelector("#sabji").append(div)
-
-    
-   }
-   
- 
- 
- 
 
 }
 

@@ -92,7 +92,7 @@
             <a href="../Login/login.html">
                 <p class="name">Login</p>
             </a>
-        
+            <div id="mortalhu"></div>
         </div>
     </div>
     <hr id="gray_line">
@@ -110,11 +110,11 @@
                 </li>
                 <li><a href="">Vegetables</a>
                     <ul>
-                        <li><a href="">Daily veggies</a></li>
-                        <li><a href="">Herb & Leafies</a></li>
-                        <li><a href="">Exotic Vegitables</a></li>
-                        <li><a href="">Cuts, peeled & Sprouts</a></li>
-                        <li><a href="">Vegetable Combos</a></li>
+                        <li><a href="../vegetables page/daily veggies.html">Daily veggies</a></li>
+                        <li><a href="../vegetables page/herbs and leafies.html">Herb & Leafies</a></li>
+                        <li><a href="../vegetables page/exotic vegetables.html">Exotic Vegitables</a></li>
+                        <li><a href="../vegetables page/cuts peelds sprouts.html">Cuts, peeled & Sprouts</a></li>
+                        <li><a href="../vegetables page/vegetables combo.html">Vegetable Combos</a></li>
                     </ul>
                 </li>
             </ul>
@@ -209,8 +209,9 @@
 
 </body>
 </html>
+<script src="../navbar/navbar.js"></script>
 <script>
-    let arr = JSON.parse(localStorage.getItem("details"))
+    let arr = JSON.parse(localStorage.getItem("details")) || []
     console.log(arr)
     appenddata(arr)
     function appenddata(arr){
@@ -234,6 +235,9 @@ arr.forEach(function(elem){
 
     let btn = document.createElement("button")
     btn.innerText = "ADD"
+    btn.addEventListener("click",function(){
+       buy(elem)
+    })
     btn.setAttribute("id","btn")
 
     
@@ -245,5 +249,12 @@ arr.forEach(function(elem){
     document.querySelector("#maindata").append(name,size,rate,btn)
 })
     }
+
+
+    let deta = JSON.parse(localStorage.getItem("cartdata")) || []
+function buy(elem){
+   deta.push(elem)
+   localStorage.setItem("cartdata",JSON.stringify(deta))
+}
 
 </script>

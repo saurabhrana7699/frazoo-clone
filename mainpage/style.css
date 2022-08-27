@@ -73,7 +73,7 @@
     margin: auto;
     cursor: pointer;
     width: 90%;
-    /* margin-left: 200px; */
+    margin-left: 50px;
     justify-content: space-evenly; 
     /* border: 1px solid red;  */
 }

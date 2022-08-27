@@ -434,27 +434,21 @@ h4{
      <!-- navbar section -->
 
      <div id="navbar">
-        <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
+
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
             <p class="name">Powai</p>
 
         </div>
         <div class="flex">
-            <input id="search" type="text" placeholder="Find fresh vegetables, fruits and dairy....">
-            <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
-        </div>
-        <div class="flex">
-            <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
-            <p class="name">Cart</p>
+
         </div>
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
             <p class="name">Credit</p>
         </div>
         <div class="flex">
-            <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
-            <p class="name">Login</p>
+
         </div>
     </div>
     <hr id="gray_line">
@@ -465,24 +459,19 @@ h4{
             <ul>
                 <li><a href="">Fruits</a>
                     <ul>
-                        <li><a href="">Exotic Fruits</a></li>
-                        <li><a href="">Fresh Fruits</a></li>
-                        <li><a href="">Fruit Combos</a></li>
+
                     </ul>
                 </li>
                 <li><a href="">Vegetables</a>
                     <ul>
-                        <li><a href="">Daily veggies</a></li>
-                        <li><a href="">Herb & Leafies</a></li>
-                        <li><a href="">Exotic Vegitables</a></li>
-                        <li><a href="">Cuts, peeled & Sprouts</a></li>
-                        <li><a href="">Vegetable Combos</a></li>
+
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
     <hr id="last">
+
 
      <!-- navbar section -->
     
@@ -592,6 +581,7 @@ h4{
     
 </body>
 </html>
+ main
 <script>
     let data=[]
    
@@ -653,6 +643,7 @@ function append(data){
     data.forEach((el)=>{
         let image=document.createElement("img")
         image.src=el.image;
+
         let name=document.createElement("h3")
         name.innerText=el.name;
         let price=document.createElement("h3")
@@ -662,11 +653,7 @@ function append(data){
 
         let btn=document.createElement("button")
         btn.innerText="ADD"
-        btn.setAttribute("id","btn")
 
-        btn.addEventListener("click",function(){
-            addfunc(el)
-        })
         
         let box1=document.createElement("div")
          box1.setAttribute("id","veggies-image")
@@ -693,82 +680,5 @@ function append(data){
     })
 }
 append(exotic);
-let arr=[]
-
-function addfunc(el){
-    arr.push(el)
-    localStorage.setItem("",JSON.stringify(arr))
-}
-
-
-// sidebar section
-
-let x =  document.querySelector("#fruits")
-   x.addEventListener("click",fruits)
-   let count =0
-  
-    function fruits(){
-   
-count++
-if(count===1){
-
-   let fal = document.querySelector("#fruits")
-   fal.innerText = "- Fruits"
-  
-
-   
-    let div = document.createElement("div")
-      
-
-    let name = document.createElement("h4")
-    name.innerText = "--Exotic Fruits"
-
-    let name2 = document.createElement("h4")
-    name2.innerText = " --Fresh Fruits"
-    let name3 = document.createElement("h4")
-    name3.innerText = "--Fruit Combos"
-
-    div.append(name,name2,name3)
-    document.querySelector("#fal").append(div)
-}
-    }
-
-    let y = document.querySelector("#vege")
-y.addEventListener("click",vege)
-let sum=0
-function vege(){
-   sum++
-   if(sum===1){
-
-    document.querySelector("#vege").innerText = "- Vegetables"
-  
-    let div = document.createElement("div")
- 
-    let name = document.createElement("h4")
-    name.innerText = "--Daily Veggies"
-
-    let name2 = document.createElement("h4")
-    name2.innerText = "--Herbs & Leafies"
-
-    let name3 = document.createElement("h4")
-    name3.innerText = "--Exotic Vegetables"
-
-    let name4 = document.createElement("h4")
-    name4.innerText = "--Cuts,Peeled & Sprouts"
-
-    let name5 = document.createElement("h4")
-    name5.innerText = "--Vegetavles Combos"
-
-    div.append(name,name2,name3,name4,name5)
-    document.querySelector("#sabji").append(div)
-
-    
-   }
-   
- 
- 
- 
-
-}
 
 </script>

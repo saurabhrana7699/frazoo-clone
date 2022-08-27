@@ -171,20 +171,4 @@ function fruitproducts(fruitsdata){
     })
 }
 
-<<<<
-// console.log(sliding)
 
-// let container = document.getElementById("")
-// let i=0
-// let div=document.querySelector("#slide-image")
-// setInterval(function(){
-//     if(i===sliders.length){
-//         i=0
-//     }
-//     let img = document.createElement("img");
-//     img.src = sliders[i];
-//     // div.innerHTML=null
-
-//     div.append(img);
-//     i++;
-// },2000)
