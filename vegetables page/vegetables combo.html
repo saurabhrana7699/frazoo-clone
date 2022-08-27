@@ -436,46 +436,21 @@ h4{
          <!-- navbar section -->
 
          <div id="navbar">
-
-            <a href="../index.html">
-                <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
-            </a>
-    
+n
             <div class="flex">
                 <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
                 <p class="name">Powai</p>
     
             </div>
             <div class="flex">
-    
-                <input id="search" type="text" placeholder="Find fresh vegetables, fruits and dairy....">
-                
-                <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
-            
-            </div>
-    
-            <div class="flex">
-    
-                <a href="../fruits/cart.html">
-                    <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
-                </a>
-                <a href="../fruits/cart.html">
-                    <p class="name">Cart</p>
-                </a>
-            
+
             </div>
             <div class="flex">
                 <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
                 <p class="name">Credit</p>
             </div>
             <div class="flex">
-                <a href="../Login/login.html">
-                    <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
-                </a>
-                <a href="../Login/login.html">
-                    <p class="name">Login</p>
-                </a>
-                <div id="mortalhu"></div>
+
             </div>
         </div>
         <hr id="gray_line">
@@ -486,18 +461,12 @@ h4{
                 <ul>
                     <li><a href="">Fruits</a>
                         <ul>
-                            <li><a href="../fruits/exotic.html">Exotic Fruits</a></li>
-                            <li><a href="../fruits/fresh.html">Fresh Fruits</a></li>
-                            <li><a href="../fruits/fruitcombos.html">Fruit Combos</a></li>
+in
                         </ul>
                     </li>
                     <li><a href="">Vegetables</a>
                         <ul>
-                            <li><a href="./daily veggies.html">Daily veggies</a></li>
-                            <li><a href="./herbs and leafies.html">Herb & Leafies</a></li>
-                            <li><a href="./exotic vegetables.html">Exotic Vegitables</a></li>
-                            <li><a href="./cuts peelds sprouts.html">Cuts, peeled & Sprouts</a></li>
-                            <li><a href="./vegetables combo.html">Vegetable Combos</a></li>
+<
                         </ul>
                     </li>
                 </ul>
@@ -505,7 +474,7 @@ h4{
         </div>
         <hr id="last">
     
-    
+n
          <!-- navbar section -->
         
     
@@ -615,8 +584,7 @@ h4{
     
 </body>
 </html>
-<script src="../Sidebar/sidebar.js"></script>
-<script src="../navbar/navbar.js"></script>
+ main
 <script>
     let data=[]
    
@@ -624,49 +592,49 @@ h4{
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/389/original/data?width=512&height=512",
         name:"Fresh Salad Combo ",
-        price:67,
+<>> main
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/008/980/original/data?width=256&height=256",
         name:"Masala Combo",
-        price:45,
+in
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/177/original/data?width=512&height=512",
         name:"Detox Mix Combo ",
-        price:74,
+
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/401/original/data?width=512&height=512",
         name:"Yellow Capsicum (Bell Pepper) 2pcs",
-        price:108,
+
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/400/original/data?width=512&height=512",
         name:"Red Capsicum 2pcs",
-        price:99,
+<
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/402/original/data?width=512&height=512",
         name:"Mixed Capsicum Combo ",
-        price:108,
+n
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/202/original/data?width=512&height=512",
         name:"UPVAS Combo ",
-        price:121,
+
         size:"1 Combo"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/175/original/data?width=512&height=512",
         name:"Regular Veggie Combo",
-        price:123,
+
         size:"1 Combo"
     },
 
@@ -678,9 +646,7 @@ function append(data){
     data.forEach((el)=>{
         let image=document.createElement("img")
         image.src=el.image;
-        image.addEventListener("click",function(){
-        addtocart(el)
-    })
+
         let name=document.createElement("h3")
         name.innerText=el.name;
         let price=document.createElement("h3")
@@ -691,10 +657,7 @@ function append(data){
         let btn=document.createElement("button")
         btn.innerText="ADD"
         btn.setAttribute("id","btn")
-        btn.addEventListener("click",function(){
-       buy(el)
-    })
-     
+
         
         let box1=document.createElement("div")
          box1.setAttribute("id","veggies-image")
@@ -722,17 +685,4 @@ function append(data){
 }
 append(combos);
 
-
-let arr = []
-function addtocart(elem){
-    arr.push(elem)
-    localStorage.setItem("details",JSON.stringify(arr))
-    window.location.href="../fruits/details.html"
-}
-
-let deta = JSON.parse(localStorage.getItem("cartdata")) || []
-function buy(elem){
-   deta.push(elem)
-   localStorage.setItem("cartdata",JSON.stringify(deta))
-}
 </script>

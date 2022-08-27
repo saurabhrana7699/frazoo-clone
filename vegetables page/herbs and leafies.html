@@ -435,46 +435,21 @@ h4{
      <!-- navbar section -->
 
      <div id="navbar">
-
-        <a href="../index.html">
-            <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
-        </a>
-
+main
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
             <p class="name">Powai</p>
 
         </div>
         <div class="flex">
-
-            <input id="search" type="text" placeholder="Find fresh vegetables, fruits and dairy....">
-            
-            <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
-        
-        </div>
-
-        <div class="flex">
-
-            <a href="../fruits/cart.html">
-                <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
-            </a>
-            <a href="../fruits/cart.html">
-                <p class="name">Cart</p>
-            </a>
-        
+< main
         </div>
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
             <p class="name">Credit</p>
         </div>
         <div class="flex">
-            <a href="../Login/login.html">
-                <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
-            </a>
-            <a href="../Login/login.html">
-                <p class="name">Login</p>
-            </a>
-            <div id="mortalhu"></div>
+<<> main
         </div>
     </div>
     <hr id="gray_line">
@@ -485,18 +460,12 @@ h4{
             <ul>
                 <li><a href="">Fruits</a>
                     <ul>
-                        <li><a href="../fruits/exotic.html">Exotic Fruits</a></li>
-                        <li><a href="../fruits/fresh.html">Fresh Fruits</a></li>
-                        <li><a href="../fruits/fruitcombos.html">Fruit Combos</a></li>
+main
                     </ul>
                 </li>
                 <li><a href="">Vegetables</a>
                     <ul>
-                        <li><a href="./daily veggies.html">Daily veggies</a></li>
-                        <li><a href="./herbs and leafies.html">Herb & Leafies</a></li>
-                        <li><a href="./exotic vegetables.html">Exotic Vegitables</a></li>
-                        <li><a href="./cuts peelds sprouts.html">Cuts, peeled & Sprouts</a></li>
-                        <li><a href="./vegetables combo.html">Vegetable Combos</a></li>
+main
                     </ul>
                 </li>
             </ul>
@@ -504,7 +473,7 @@ h4{
     </div>
     <hr id="last">
 
-
+<<>> main
      <!-- navbar section -->
 
     <div id="headding">
@@ -612,8 +581,7 @@ h4{
     
 </body>
 </html>
-<script src="../Sidebar/sidebar.js"></script>
-<script src="../navbar/navbar.js"></script>
+<main
 <script>
     let data=[]
    
@@ -622,73 +590,73 @@ h4{
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LCUR11.png?width=256&height=256",
     name:"Curry Leaves",
-    price:5,
+in
     size:"50g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/003/250/original/data?width=256&height=256",
     name:"Lemon(Nimboo)",
-    price:16,
+
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LCOR21.png?width=256&height=256",
     name:"Coriander Leaves",
-    price:15,
+
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/VGAR12.png?width=256&height=256",
     name:"Garlic",
-    price:9,
+<
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LMIN11.png?width=256&height=256",
     name:"Mint Leaves(Pudina)",
-    price:27,
+
     size:"100g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/417/original/data?width=256&height=256",
     name:"Aloevera",
-    price:39,
+
     size:"1pc"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/VAWL11.png?width=256&height=256",
     name:"Amla",
-    price:28,
+
     size:"250g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/003/639/original/data?width=256&height=256",
     name:"Green Amaranthus",
-    price:45,
+<
     size:"250g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/162/original/data?width=256&height=256",
     name:"Red Amaranthus",
-    price:45,
+
     size:"250g"
 },
 {
     image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/009/506/original/data?width=256&height=256",
     name:"Betel Leaf",
-    price:26,
+n
     size:"6pcs"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LMET1.png?width=256&height=256",
     name:"Methi (Fenugreek Leaves)",
-    price:18,
+<n
     size:"100g"
 },
 {
     image:"https://imagemaster.fraazo.com/fraazo-master/products/LSPI11.png?width=512&height=512",
     name:"Spinach (Palak)",
-    price:17,
+
     size:"250g"
 },
 ]
@@ -699,9 +667,7 @@ function append(data){
     data.forEach((el)=>{
         let image=document.createElement("img")
         image.src=el.image;
-        image.addEventListener("click",function(){
-        addtocart(el)
-    })
+
         let name=document.createElement("h3")
         name.innerText=el.name;
         let price=document.createElement("h3")
@@ -711,12 +677,7 @@ function append(data){
 
         let btn=document.createElement("button")
         btn.innerText="ADD"
-        btn.addEventListener("click",function(){
-       buy(el)
-    })
-        btn.setAttribute("id","btn")
 
-        
         
         let box1=document.createElement("div")
          box1.setAttribute("id","veggies-image")
@@ -744,19 +705,6 @@ function append(data){
 }
 append(herbs);
 
-
-
-let arr = []
-function addtocart(elem){
-    arr.push(elem)
-    localStorage.setItem("details",JSON.stringify(arr))
-    window.location.href="../fruits/details.html"
-}
-
-let deta = JSON.parse(localStorage.getItem("cartdata")) || []
-function buy(elem){
-   deta.push(elem)
-   localStorage.setItem("cartdata",JSON.stringify(deta))
 }
 
 </script>

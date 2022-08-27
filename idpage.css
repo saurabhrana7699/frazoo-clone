@@ -1,0 +1,406 @@
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 120px;
+}
+
+#search {
+    width: 600px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid #dddddd;
+    padding-left: 15px;
+
+}
+
+::placeholder {
+
+    color: #949494;
+}
+
+.name {
+    color: #949494;
+    padding-left: 5px;
+    font-family: Quicksand, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.name:hover {
+    color: black;
+}
+
+#search_icon {
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+#gray_line {
+
+    margin-top: -15px;
+    border: 0.5px solid #dddddd;
+}
+
+#fruits {
+    border: none;
+    padding: 2px 100px 2px 2px;
+}
+
+#cart_div {
+    width: 30%;
+    height: auto;
+}
+
+#last {
+    margin-top: 60px;
+}
+
+#navbar1>ul a:hover {
+    color: #4fbb90;
+}
+
+
+
+#navbar1>ul>li {
+    float: left;
+    /* padding: 5px 7px; */
+    list-style: none;
+
+
+}
+
+#navbar1>ul>li a {
+    text-decoration: none;
+    font-family: Quicksand, sans-serif;
+    font-size: 13px;
+    padding: 0px 10px;
+    display: grid;
+    background-color: white;
+    justify-content: flex-start;
+    /* font-weight: bolder; */
+}
+
+
+#navbar1 ul ul {
+    display: none;
+}
+
+#navbar1>ul>li>ul li {
+    float: center;
+    /* padding: 10px;
+    margin: 10px; */
+    font-family: Quicksand, sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+#navbar1>ul>li:hover>ul {
+    display: block;
+
+    position: absolute;
+    /* margin-bottom: 0; */
+
+    margin-left: -40px;
+    font-size: 13px;
+
+
+
+}
+
+
+
+
+
+
+
+
+#navbar1>ul>li>ul li {
+    list-style: none;
+    margin-top: 20px;
+    /* float: left; */
+
+
+
+
+}
+
+
+
+#container1 {
+    margin-left: 45%;
+    margin-top: 30px;
+    width: 85%;
+    /* margin: auto; */
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    height: 600px;
+}
+
+#your_order {
+    font-family: Quicksand, sans-serif;
+    font-size: 26px;
+}
+
+#box_img {
+    margin-left: 100px;
+}
+
+#sidebar {
+    width: 30%;
+    height: auto;
+    margin-left: 50px;
+}
+
+#orderpage {
+    width: 65%;
+    height: auto;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+#modal {
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.website {
+    height: 1000vh;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.names {
+    cursor: pointer;
+}
+
+.side {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#modal>input {
+    padding: 10px 200px 10px 5px;
+    margin: 10px 20px 10px 10px;
+    margin-left: 20%;
+    border-radius: 7px;
+    border: 1px solid #5e5e69;
+}
+
+#close_btn {
+
+    margin-left: 620px;
+    margin-top: 10px;
+}
+
+#submit {
+    display: block;
+    background-color: #4fbb90;
+    border-radius: 10px;
+    border: none;
+}
+
+#profile {
+    margin-left: 20px;
+    font-family: Quicksand, sans-serif;
+    font-size: 20px
+}
+
+#shopping {
+    padding: 10px 30px;
+    background-color: #4fbb90;
+    border-radius: 7px;
+    border: none;
+    color: white;
+
+}
+
+#logout {
+    color: red;
+    cursor: pointer;
+
+}
+
+#footer {
+    width: 100%;
+    height: 800px;
+    background-color: #165241;
+
+}
+
+#upper-footer {
+
+    width: 90%;
+    position: relative;
+    left: 5%;
+    /* width: 100%; */
+    height: 300px;
+    display: flex;
+
+}
+
+#fraazo-logo {
+
+
+    width: 25%;
+    height: 100%;
+
+}
+
+#logo-size {
+    width: 70%;
+    height: 30%;
+}
+
+#logo-para {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #aac0ba;
+}
+
+#useful-links {
+
+    width: 25%;
+    height: 100%;
+}
+
+#list-para {
+    position: relative;
+    left: 15%;
+
+}
+
+#anchor-text-color {
+    text-decoration: none;
+    font-family: Quicksand, sans-serif !important;
+    color: #aac0ba;
+}
+
+#title-head {
+    position: relative;
+    left: 15%;
+    color: #fffff9;
+    font-family: Quicksand, sans-serif !important;
+}
+
+#title-head2 {
+    position: relative;
+    left: 2%;
+    color: #fffff9;
+    font-family: Quicksand, sans-serif !important;
+}
+
+#title-head3 {
+    position: relative;
+    left: 2%;
+    color: #fffff9;
+    font-family: Quicksand, sans-serif !important;
+}
+
+#cities-serve {
+
+    width: 25%;
+    height: 100%;
+}
+
+#contact-us {
+
+    width: 25%;
+    height: 100%;
+}
+
+.mail-position {
+    position: relative;
+    left: 3%;
+}
+
+#icon-logo {
+    display: flex;
+
+}
+
+#lower-footer {
+    width: 90%;
+    position: relative;
+    left: 5%;
+
+    /* width: 100%; */
+    height: 500px;
+}
+
+#fotter-last-head {
+    font-family: 'quicksand', sans-serif;
+    color: #fffff9;
+}
+
+#footer-last-para {
+    font-family: Quicksand, sans-serif !important;
+    color: #aac0ba;
+}
+
+/* #last-para-sizing{
+    
+} */
+#footer-last-line {
+    font-family: Quicksand, sans-serif !important;
+    text-align: center;
+    color: #aac0ba;
+    position: relative;
+    top: 5%;
+}
+
+/* footer section */
+#green-pic {
+    width: 100%;
+    margin-bottom: -10px;
+
+}
+
+#green-pic img {
+    width: 100%;
+}

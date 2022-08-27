@@ -436,46 +436,21 @@ h4{
      <!-- navbar section -->
 
      <div id="navbar">
-
-        <a href="../index.html">
-            <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
-        </a>
-
+ain
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
             <p class="name">Powai</p>
 
         </div>
         <div class="flex">
-
-            <input id="search" type="text" placeholder="Find fresh vegetables, fruits and dairy....">
-            
-            <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
-        
-        </div>
-
-        <div class="flex">
-
-            <a href="../fruits/cart.html">
-                <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
-            </a>
-            <a href="../fruits/cart.html">
-                <p class="name">Cart</p>
-            </a>
-        
+<<
         </div>
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
             <p class="name">Credit</p>
         </div>
         <div class="flex">
-            <a href="../Login/login.html">
-                <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
-            </a>
-            <a href="../Login/login.html">
-                <p class="name">Login</p>
-            </a>
-            <div id="mortalhu"></div>
+<<<in
         </div>
     </div>
     <hr id="gray_line">
@@ -486,18 +461,12 @@ h4{
             <ul>
                 <li><a href="">Fruits</a>
                     <ul>
-                        <li><a href="../fruits/exotic.html">Exotic Fruits</a></li>
-                        <li><a href="../fruits/fresh.html">Fresh Fruits</a></li>
-                        <li><a href="../fruits/fruitcombos.html">Fruit Combos</a></li>
+
                     </ul>
                 </li>
                 <li><a href="">Vegetables</a>
                     <ul>
-                        <li><a href="./daily veggies.html">Daily veggies</a></li>
-                        <li><a href="./herbs and leafies.html">Herb & Leafies</a></li>
-                        <li><a href="./exotic vegetables.html">Exotic Vegitables</a></li>
-                        <li><a href="./cuts peelds sprouts.html">Cuts, peeled & Sprouts</a></li>
-                        <li><a href="./vegetables combo.html">Vegetable Combos</a></li>
+
                     </ul>
                 </li>
             </ul>
@@ -612,8 +581,7 @@ h4{
     
 </body>
 </html>
-<script src="../Sidebar/sidebar.js"></script>
-<script src="../navbar/navbar.js"></script>
+
 <script>
     let data=[]
    
@@ -621,32 +589,32 @@ h4{
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/661/original/data?width=256&height=256",
         name:"Bengal Gram Sprouts",
-        price:22,
+<
         size:"200g"
     },
     {
         image:"https://imagemaster.fraazo.com/fraazo-master/products/VGAR32.png?width=256&height=256",
         name:"Peeled Garlic",
-        price:33,
+
         size:"100g"
     },
 
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/007/625/original/data?width=512&height=512",
         name:"Mixed Sprouts",
-        price:29,
+<
         size:"200g"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/images/images/000/007/624/original/data?width=512&height=512",
         name:"Moong Sprouts",
-        price:30,
+<
         size:"200g"
     },
     {
         image:"https://imageprod.fraazo.com/fraazo-prod/products/product_images/000/000/320/original/data?width=512&height=512",
         name:"Pulao Combo",
-        price:81,
+<<
         size:"200g"
     },
 
@@ -659,9 +627,7 @@ function append(data){
     data.forEach((el)=>{
         let image=document.createElement("img")
         image.src=el.image;
-        image.addEventListener("click",function(){
-        addtocart(el)
-    })
+<<<<
         let name=document.createElement("h3")
         name.innerText=el.name;
         let price=document.createElement("h3")
@@ -671,9 +637,7 @@ function append(data){
 
         let btn=document.createElement("button")
         btn.innerText="ADD"
-        btn.addEventListener("click",function(){
-       buy(el)
-    })
+<<
         btn.setAttribute("id","btn")
 
         btn.addEventListener("click",function(){
@@ -705,23 +669,6 @@ function append(data){
     })
 }
 append(cuts);
-
-
-
-
-let arr = []
-function addtocart(elem){
-    arr.push(elem)
-    localStorage.setItem("details",JSON.stringify(arr))
-    window.location.href="../fruits/details.html"
-}
-
-let deta = JSON.parse(localStorage.getItem("cartdata")) || []
-function buy(elem){
-   deta.push(elem)
-   localStorage.setItem("cartdata",JSON.stringify(deta))
-}
-
 
 
 </script>
