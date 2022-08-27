@@ -6,15 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../navbar/navbar.css">
     <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="./login.css">
-    <title>Login</title>
-    
+    <title>Document</title>
+    <style>
+        body{
+            margin: auto;
+            background-color: rgb(241, 239, 239)
+
+        }
+        iframe{
+            /* border: 1px solid red; */
+            width: 120%;
+            margin: auto;
+            border-radius: 20px;
+          
+        }
+        #address{
+            margin: auto;
+            display: grid; 
+            grid-template-columns: repeat(5,1fr);
+            width: 250%;
+        }
+        #submit{
+            border: 2px solid teal;
+            color: teal;
+            width: 200%;
+            height: 40px;
+            margin-left: 10%;
+            margin-top: 350px;
+            border-radius: 20px;
+            font-size: 25px;
+        }
+        #submit:hover{
+            background-color: teal;
+            color: white;
+        }
+        #map-container{
+            display: flex;
+            padding: 20px;
+            margin-left: 200px;
+        }
+        #add-address{
+            padding: 10px;
+            text-align: center;
+            width: 350%;
+            height: 40px;
+        } 
+        #details-form>input{
+            cursor: pointer;
+            margin-top: 5%;
+            width: 250%;
+            margin-left: 100px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        .gmap_canvas{
+            border-radius: 20px;
+        }
+    </style>
 </head>
-<body>
+<body onload="geoLocation()">
     <div id="navbar">
-        <a href="../index.html">
         <img id="logo" src="https://webasset.fraazo.com/production/b70a67f4e825e3d388ac4466952c20a8.svg" alt="error">
-    </a>
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/marker--v1.png" alt="error">
             <p class="name">Powai</p>
@@ -25,29 +77,16 @@
             <img class="icon" id="search_icon" src="https://img.icons8.com/material/344/search--v1.png" alt="error">
         </div>
         <div class="flex">
-
-            <a href="../fruits/cart.html">
-                <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
-            </a>
-            <a href="../fruits/cart.html">
-                <p class="name">Cart</p>
-            </a>
-
-
+            <img class="icon" id="cart" src="https://img.icons8.com/material/344/shopping-cart--v1.png" alt="error">
+            <p class="name">Cart</p>
         </div>
         <div class="flex">
             <img class="icon" src="https://img.icons8.com/material/344/bank-cards--v3.png" alt="error">
             <p class="name">Credit</p>
         </div>
         <div class="flex">
-
-            <a href="../radioactive-lip-3578/Login/login.html">
             <img class="icon" src="https://img.icons8.com/material/344/user--v1.png" alt="error">
-        </a>
-        <a href="../radioactive-lip-3578/Login/login.html">
             <p class="name">Login</p>
-
-        </a>
         </div>
     </div>
     <hr id="gray_line">
@@ -58,42 +97,51 @@
             <ul>
                 <li><a href="">Fruits</a>
                     <ul>
-                        <li><a href="../fruits/exotic.html">Exotic Fruits</a></li>
-                        <li><a href="../fruits/fresh.html">Fresh Fruits</a></li>
-                        <li><a href="../fruits/fruitcombos.html">Fruit Combos</a></li>
+                        <li><a href="">Exotic Fruits</a></li>
+                        <li><a href="">Fresh Fruits</a></li>
+                        <li><a href="">Fruit Combos</a></li>
                     </ul>
                 </li>
                 <li><a href="">Vegetables</a>
                     <ul>
-                        <li><a href="../vegetables page/daily veggies.html">Daily veggies</a></li>
-                        <li><a href="../vegetables page/herbs and leafies.html">Herb & Leafies</a></li>
-                        <li><a href="../vegetables page/exotic vegetables.html">Exotic Vegitables</a></li>
-                        <li><a href="../vegetables page/cuts peelds sprouts.html">Cuts, peeled & Sprouts</a></li>
-                        <li><a href="../vegetables page/vegetables combo.html">Vegetable Combos</a></li>
+                        <li><a href="">Daily veggies</a></li>
+                        <li><a href="">Herb & Leafies</a></li>
+                        <li><a href="">Exotic Vegitables</a></li>
+                        <li><a href="">Cuts, peeled & Sprouts</a></li>
+                        <li><a href="">Vegetable Combos</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
     <hr id="last">
-<div id="sabkidetails">
 
-    <h1>Hello New Customer</h1>
-    <h3>Register Now For Unbelievable Discount</h3>
-    <input type="text" placeholder="Firest-Name" id="typeinput">
-    <input type="text" placeholder="Last-Name" id="typeinput2">
-    <input type="email" placeholder="Email-ID" id="typeinput3">
-    <input type="number" placeholder="Mobile-Number" id="typeinput4">
-     <div id="checkboxes">
-<p>Title:</p><input type="checkbox" type="checkbox"  id="typeinput5" required ><span>MR</span>
-<input type="checkbox" id="typeinput6"><span>MRS</span>
-<input type="checkbox" id="typeinput7"><span>MISS</span>
-     </div>
-<a href="idpage.html">
-     <button id="pressbtn">Submit</button>
-    </a>
-</div>
+
+
+<div id="map-container">
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps embed wordpress</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
     
+    <div id="address">
+
+    
+       
+       <form action="" id="details-form">
+        <div id="add-address">
+            <h2>Add Address</h2>
+        </div>
+        <input type="text" placeholder="Enter Name" id="name">
+        <input type="text" placeholder="House No" id="house">
+        <input type="number" placeholder="Mobile No" id="mobile">
+        <input type="text" placeholder="Enter City" id="city">
+        <input type="text" placeholder="State" id="state">
+        <input type="Number" placeholder="Enter PIN Code" id="pin">
+        
+       </form>
+       <button id="submit" onclick="CheckoutDetails()" >Submit</button>
+    </div>
+   
+</div>
+
 <div id="green-pic"><img src="https://webasset.fraazo.com/production/a72cf5cd03bd56f4be37fa1c4ce7062d.svg" alt=""></div>
 
 <!-- footer -->
@@ -165,7 +213,79 @@
     </div>
 
 </footer>
-    
 </body>
 </html>
-<script src="./login.js"></script>
+<script>
+    function getaData(){
+    let city = document.getElementById("query").value;
+
+    let url = `https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1zJHtkYXRhLm5hbWV9!6i13`;
+
+    fetch(url)
+    .then(function (res){
+        return res.json();
+    })
+    .then(function (res){
+        console.log(res);
+        append(res);
+    })
+    .catch(function(err){
+        console.log(err)
+    });
+}
+
+
+
+geoLocation();
+
+
+function getWeatherOnLocation(lat,lon){
+    let url = "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0da8fc0a55729f589042dd8a8a776c00{API key}"
+
+    fetch(url)
+    .then(function (res){
+        return res.json();
+    })
+    .then(function (res){
+        console.log(res);
+        append(res);
+    })
+    .catch(function(err){
+        console.log(err)
+    });
+}
+
+
+function ShowDetails(name,house,mobile,city,state,pin){
+    this.name=name
+    this.house=house;
+    this.mobile=mobile;
+    this.city=city;
+    this.state=state;
+    this.pin=pin;
+}
+
+function CheckoutDetails(){
+
+    let form = document.getElementById("details-form");
+
+    let name= form.name.value;
+    let house = form.house.value;
+    let mobile = form.mobile.value;
+    let city = form.city.value;
+    let state = form.state.value;
+    let pin = form.pin.value;
+    
+    let details = new ShowDetails(name,house,mobile,city,state,pin)
+    let user = JSON.parse(localStorage.getItem("user")) || [];
+
+    user.push(details)
+    console.log(user)
+    localStorage.setItem("user",JSON.stringify(user))
+    console.log('details:', details)
+    let username = document.querySelector("#name").value
+    alert("Dear"+ "  " +   `${username}`+   "  " +  "Your Order Is Confirmed")
+window.location.href = "../index.html"
+
+}
+</script>

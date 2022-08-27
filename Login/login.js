@@ -13,7 +13,9 @@ function runkrdo(){
   
 let heros = new consumers(name,surname,email,number)
 arr.push(heros)
-  
+
+ alert("Dear" +  " "  +`${name}` + " " + "You Are Register Successfully")
+
   localStorage.setItem("newlist",JSON.stringify(arr))
 }
 

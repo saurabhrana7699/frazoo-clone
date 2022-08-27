@@ -235,8 +235,8 @@ let arr = []
 function addtocart(el){
     arr.push(el)
     localStorage.setItem("details",JSON.stringify(arr))
-    window.location.href="/radioactive-lip-3578/fruits/details.html"
-    // console.log("Yes")
+   window.location.href= "./fruits/details.html"
+
 }
 
 
@@ -247,27 +247,3 @@ function buy(el){
    localStorage.setItem("cartdata",JSON.stringify(deta))
 }
 
-// let sliders = [
-//     {
-//         image1:"https://imageprod.fraazo.com/fraazo-prod/web_ban/2562.png",
-//         image2:"https://imageprod.fraazo.com/fraazo-prod/web_ban/4923.png",
-//         image3:"https://imageprod.fraazo.com/fraazo-prod/web_ban/4986.png",
-//         image4:"https://imageprod.fraazo.com/fraazo-prod/web_ban/4985.png"
-//     }
-// ]
-// console.log(sliding)
-
-// let container = document.getElementById("")
-// let i=0
-// let div=document.querySelector("#slide-image")
-// setInterval(function(){
-//     if(i===sliders.length){
-//         i=0
-//     }
-//     let img = document.createElement("img");
-//     img.src = sliders[i];
-//     // div.innerHTML=null
-
-//     div.append(img);
-//     i++;
-// },2000)
